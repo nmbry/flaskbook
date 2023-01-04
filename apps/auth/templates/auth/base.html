@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('auth.static', filename='css/style.css')}}">
+    <script src="{{ url_for('auth.static', filename='js/index.js') }}"></script>
+    {# titleを継承先で実装する #}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+{# contentを継承先で実装する #}
+{% block content %}{% endblock %}
+</body>
+</html>
